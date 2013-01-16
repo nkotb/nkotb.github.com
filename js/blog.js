@@ -264,7 +264,7 @@ $(function() {
 
                 //添加继续阅读
                 $(".article-content").append("<br/>");
-                $(".article-content").append("<p><a title=\"\" class=\"btn btn-primary pull-left\" href=\"#!show/" + articles[curIndex].file + "\"  onclick=\"\">继续阅读  →</a> </p><br/> <br/>");
+                $(".article-content").append("<p><a title=\"\" class=\"btn pull-left\" href=\"#!show/" + articles[curIndex].file + "\"  onclick=\"\">继续阅读  →</a> </p><br/> <br/>");
                 $(".article-content").append("<div class=\"line_dashed\"></div>");
                 
                 curIndex++;

@@ -35,7 +35,7 @@
 	articles为文章列表。
 
 例如
-	
+
 增加2012-12-12-hello-world.md,articles中增加一条记录
  
 	
@@ -45,7 +45,7 @@
 评论修改：
 	修改index.html中的
 
-	var duoshuoQuery = {short_name:"hugcoday"};
+	var duoshuoQuery = {short_name:"nkotb"};
 
-替换hugcoday 为你在多说上注册的二级域名，具体参考多说帮助文档
+替换nkotb为你在多说上注册的二级域名，具体参考多说帮助文档
 	
