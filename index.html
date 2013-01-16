@@ -1,70 +1,129 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>Nkotb.github.com by nkotb</title>
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="javascripts/respond.js"></script>
-    <!--[if lt IE 9]>
-      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <!--[if lt IE 8]>
-    <link rel="stylesheet" href="stylesheets/ie.css">
-    <![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head>
+        <meta charset="utf-8">
+        <title>多多de棉花糖</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
-  </head>
-  <body>
-      <div id="header">
-        <nav>
-          <li class="fork"><a href="https://github.com/nkotb">View On GitHub</a></li>
-        </nav>
-      </div><!-- end header -->
+        <!-- Le styles -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="favicon.png" rel="shortcut icon">
+        <style type="text/css">
+        
+        </style>
+        <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+        <link href="css/skin.css" rel="stylesheet">
 
-    <div class="wrapper">
+        <!-- Highlight js stylesheet file -->
+        <link rel="stylesheet" type="text/css" href="css/default.css"/>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+        <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
 
-      <section>
-        <div id="title">
-          <h1>Nkotb.github.com</h1>
-          <p></p>
-          <hr>
-          <span class="credits left">Project maintained by <a href="https://github.com/nkotb">nkotb</a></span>
-          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="http://twitter.com/#!/michigangraham">mattgraham</a></span>
+    
+    </head>
+
+    <body>
+        <script id="tpl-main" type="text/template">
+            <div class="navbar navbar-fixed-top">
+                <div class="navbar-inner">
+                    <div class="container-fluid">
+                       
+                        <a class="brand" href="#">{{site_name}}</a>
+                        <div class="nav-collapse">
+                            <ul class="nav">
+                                {{#navlist}}
+                                <li><a href="{{link}}">{{text}}</a></li>
+                                {{/navlist}}
+                            </ul>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="container-fluid">
+
+                <div class="row-fluid">
+                    <div class="span3">
+                        <div class="well sidebar-nav">
+                        </div>
+                        <div class="well sidebar-comment">
+                        </div>
+                        <div class="well sidebar-users">
+                        </div>
+                        
+
+                    </div>
+                    <div class="span9">
+                        <div class="row-fluid article-content">
+                        </div>
+
+                    </div>
+                </div>
+                <hr>
+                <footer role="contentinfo">
+                <p>&copy; {{copyright}} Powered by <a
+                    href="https://github.com/onlytiancai/xiaotiantian" target="_blank">小天天博客</a>  Changed by <a
+                    href="https://github.com/hugcoday/hugcoday.github.com" target="_blank">多多de棉花糖</a></p>
+                </footer>
+            </div><!--/.fluid-container-->
+        </script>
+
+
+        <script id="tpl-sidebar" type="text/template">
+            <ul class="nav nav-list">
+                {{#months}}
+                <li class="nav-header">{{month}}</li>
+                {{#articles}}
+                <li><a href="#!show/{{link}}">{{text}}</a></li>
+                {{/articles}}
+                {{/months}}
+            </ul>
+        </script>
+
+        
+       
+     
+        <div class="main-body">
         </div>
 
-        <h3>Welcome to GitHub Pages.</h3>
 
-<p>This automatic page generator is the easiest way to create beautiful pages for all of your projects. Author your page content here using GitHub Flavored Markdown, select a template crafted by a designer, and publish. After your page is generated, you can check out the new branch:</p>
+ 
+                      
+        <script src="js/json2.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/underscore-min.js"></script>
+        <script src="js/backbone-min.js"></script>
+        <script src="js/mustache.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/showdown-min.js"></script>
+        <script src="js/highlight/highlight.pack.js"></script>
 
-<pre><code>$ cd your_repo_root/repo_name
-$ git fetch origin
-$ git checkout gh-pages
-</code></pre>
+        <script src="js/blog.js"></script>
 
-<p>If you're using the GitHub for Mac, simply sync your repository and you'll see the new branch.</p>
+        <script>
+        
+           var duoshuoQuery = {short_name:"hugcoday"};
 
-<h3>Designer Templates</h3>
+           if (typeof DUOSHUO !== 'undefined'){
+                  
+                DUOSHUO.RecentComments('.ds-recent-comments');
+            }
+        </script>
 
-<p>We've crafted some handsome templates for you to use. Go ahead and continue to layouts to browse through them. You can easily go back to edit your page before publishing. After publishing your page, you can revisit the page generator and switch to another theme. Your Page content will be preserved if it remained markdown format.</p>
+        
+        <script src="http://static.duoshuo.com/embed.js"></script>
+        
 
-<h3>Rather Drive Stick?</h3>
 
-<p>If you prefer to not use the automatic generator, push a branch named <code>gh-pages</code> to your repository to create a page manually. In addition to supporting regular HTML content, GitHub Pages support Jekyll, a simple, blog aware static site generator written by our own Tom Preston-Werner. Jekyll makes it easy to create site-wide headers and footers without having to copy them across every page. It also offers intelligent blog support and other advanced templating features.</p>
 
-<h3>Authors and Contributors</h3>
-
-<p>You can <a href="https://github.com/blog/821" class="user-mention">@mention</a> a GitHub username to generate a link to their profile. The resulting <code>&lt;a&gt;</code> element will link to the contributor's GitHub Profile. For example: In 2007, Chris Wanstrath (<a href="https://github.com/defunkt" class="user-mention">@defunkt</a>), PJ Hyett (<a href="https://github.com/pjhyett" class="user-mention">@pjhyett</a>), and Tom Preston-Werner (<a href="https://github.com/mojombo" class="user-mention">@mojombo</a>) founded GitHub.</p>
-
-<h3>Support or Contact</h3>
-
-<p>Having trouble with Pages? Check out the documentation at <a href="http://help.github.com/pages">http://help.github.com/pages</a> or contact <a href="mailto:support@github.com">support@github.com</a> and we’ll help you sort it out.</p>
-      </section>
-
-    </div>
-    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
-    
-  </body>
+    </body>
+    <!-- 为了迎接小天天的到来，本博客程序命名为小天天博客，祝小天天能健康茁壮成长。 huhao@2012-03-24 -->
 </html>
