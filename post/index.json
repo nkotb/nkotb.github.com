@@ -8,6 +8,7 @@
         {"name": "other", "text":"其它"}
     ],
     "articles":[
+        {"title": "为zookeeper添加新命令", "file": "2013-01-18-zookeeper-add-new-command", "cate":"tech"},
         {"title": "sar命令的参数", "file": "2013-01-17-sar", "cate":"tech"},
         {"title": "Hello World", "file": "2013-01-16-hello-world", "cate":"tech"},
         {"title": "关于Cloud foundry云平台", "file": "2013-01-08-cloud-foundry", "cate":"tech"},
